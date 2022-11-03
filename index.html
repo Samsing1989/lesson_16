@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson_16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a class="header__logo">
+					<img class="" src="img/logo/logo.svg" alt="logo">
+				</a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__ltem"><a class="menu__link" href="#">About Us</a></li>
+						<li class="menu__ltem"><a class="menu__link" href="#">Courses</a></li>
+						<li class="menu__ltem"><a class="menu__link" href="#">Events</a></li>
+						<li class="menu__ltem"><a class="menu__link" href="#">Blog</a></li>
+						<li class="menu__ltem"><a class="menu__link" href="#">Contacts</a></li>
+					</ul>
+				</nav>
+				<div class="header__actions actions-header">
+					<button class="actions-header__button button"><span>Get consultation</span></button>
+					<a class="actions-header__link" href="#"><span>Log in / Register</span></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__image">
+					<img class="page__img" src="img/illustration.svg" alt="woman">
+				</div>
+				<div class="page__form form-page">
+					<div class="form-page__form-title">
+						<h3 class="form-page__subtitle">Any questions?</h3>
+						<h2 class="form-page__title">Drop us a line</h2>
+					</div>
+					<form action="https://jsonplaceholder.typicode.com/posts" class="form-page__form" method='POST'>
+						<div class="form-page__questions">
+							<div class="form-page__line">
+								<label class="form-page__label" for="firstname-01">First Name*</label>
+								<input class="form-page__input" id="firstname-01" autocomplete="off"
+									placeholder="Your first name" name="firstname" type="text">
+							</div>
+							<div class="form-page__line">
+								<label class="form-page__label" for="lastname-01">Last Name*</label>
+								<input class="form-page__input" id="lastname-01" autocomplete="off" placeholder="Your last name"
+									name="lastname" type="text">
+							</div>
+							<div class="form-page__line">
+								<label class="form-page__label" for="email-01">Email*</label>
+								<input class="form-page__input" id="email-01" autocomplete="off"
+									placeholder="Your working email" name="email" type="email">
+							</div>
+							<div class="form-page__line">
+								<label class="form-page__label" for="phone-01">Phone</label>
+								<input class="form-page__input" id="phone-01" autocomplete="off" placeholder="Your phone number"
+									name="phone" type="tel">
+							</div>
+							<div class="form-page__textarea">
+								<label class="form-page__label" for="mess-01">Message*</label>
+								<textarea placeholder="Your message" class="form-page__area" name="message" id="mess-01"></textarea>
+							</div>
+							<div class="form-page__radio form-radio">
+							<div class="form-radio__radio ">
+								<input  class="form-radio__input" id="p-01" required  value="Marketing"
+									name="position" type="radio">
+								<label class="form-radio__label" for="p-01"><span class="form-radio__text">Marketing</span></label>
+							</div>
+							<div class="form-radio__radio">
+								<input class="form-radio__input" id="p-02" required  name="position" value="Management"
+									type="radio">
+								<label class="form-radio__label" for="p-02"><span class="form-radio__text">Management</span></label>
+							</div>
+							<div class="form-radio__radio">
+								<input checked class="form-radio__input" id="p-03" required name="position" value="Design"
+									type="radio">
+								<label class="form-radio__label" for="p-03"><span class="form-radio__text">Design</span></label>
+							</div>
+							<div class="form-radio__radio">
+								<input class="form-radio__input" id="p-04" required  name="position" value="HR & Recruting"
+									type="radio">
+								<label class="form-radio__label" for="p-04"><span class="form-radio__text">HR & Recruting</span></label>
+							</div>
+							<div class="form-radio__radio">
+								<input class="form-radio__input" id="p-05" required name="position" value="Development"
+									type="radio">
+								<label class="form-radio__label" for="p-05"><span class="form-radio__text">Development</span></label>
+							</div>
+						</div>		
+								<div class="form-page__submit checkbox">
+									<input id="school-01" class="checkbox__input" required name="school" type="checkbox">
+									<label class="checkbox__label" for="school-01"><span class="checkbox__text">I agree to receive communications from Createx Online School</span></label>
+								<div class="form-page__actions">
+									<button type="submit" class="form-page__button button button--padding"><span>Send message</span></button>
+								</div>
+							</div>
+							</div>
+						
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
